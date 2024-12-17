@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+
+.card {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+
+.sneaker-image {
+  position: relative;
+  z-index: 1;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  z-index: -1;
+}
+
+
+.sneaker-image img {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  display: block;
+  transform-origin: center;
+  transition: transform 0.5s;
+}
+
+
+.info {
+  padding: 20px;
+  text-align: center;
+}
+
+
+.title {
+  font-size: 24px;
+  margin: 0;
+  transition: transform 0.5s;
+}
+
+
+.description {
+  font-size: 16px;
+  margin: 10px 0;
+  transition: transform 0.5s;
+}
+
+
+.difficulty-buttons{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  transition: transform 0.5s;
+}
+
+
+.difficulty-buttons button {
+  padding: 10px;
+  border: none;
+  background: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+.difficulty-buttons button:hover {
+  background: #ccc;
+}
+
+
+.start-button {
+  margin-top: 20px;
+  transition: transform 0.5s;
+}
+
+
+.start-button button {
+  padding: 10px 20px;
+  border: none;
+  background: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+.start-button button:hover {
+  background: #2980b9;
+}
+
+  
